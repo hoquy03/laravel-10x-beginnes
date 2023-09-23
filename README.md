@@ -1,66 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+-- pa serve là viết tắt của php artisan
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. app: Thư mục chứa mã nguồn của ứng dụng.Đây là nơi bạn sẽ phát triển các lớp Controllers, Models, và Providers của mình.
+   3.bootstrap: chứa các tệp và thư mục liên quan đến quá trình khởi động ứng dụng.
+   -- Đặc biệt, tệp "app.php" khởi tạo ứng dụng Laravel và cài đặt các cơ sở dữ liệu và cấu hình khác.
+   5.config: Trong thư mục này, bạn sẽ tìm thấy các tệp cấu hình của ứng dụng.
+   -- Laravel sử dụng các tệp này để quản lý cài đặt như cơ sở dữ liệu, tài khoản email, và các cấu hình khác.
+   6.database: Thư mục này chứa các tệp và thư mục liên quan đến cơ sở dữ liệu.
+   --- Bạn có thể thấy các tệp chạy các lệnh migration và seeding ở đây.
+   7.public: Thư mục public là nơi các tệp tĩnh như hình ảnh, tệp CSS và JavaScript được lưu trữ.
+   ----Các tệp trong thư mục này có thể truy cập trực tiếp từ trình duyệt của người dùng.
+   8.resources: Thư mục này chứa các tệp giao diện người dùng, tệp JavaScript và SASS.
+   --- Bạn sẽ phát triển giao diện người dùng ở đây.
+   9.routes: Trong thư mục này, bạn sẽ xác định các tuyến đường (routes) của ứng dụng.
+   ---Tệp "web.php" thường chứa các tuyến đường của ứng dụng web.
+   10.storage: Thư mục này lưu trữ các dữ liệu được tạo ra bởi ứng dụng, chẳng hạn như các tệp phiên hoặc tệp cache.
+   11.tests: Nếu bạn viết các bài kiểm tra (tests) cho ứng dụng của bạn, thì bạn có thể đặt chúng trong thư mục này.
+   12.vendor: Thư mục này chứa tất cả các gói (packages) Composer và các phụ thuộc của ứng dụng. Composer sẽ tự động quản lý thư mục này và tải về các gói cần thiết.
+   13..env: Tệp cấu hình môi trường, trong đó bạn có thể đặt các biến môi trường cho ứng dụng của mình.
+   14..env.example: Tệp mẫu cho các biến môi trường, giúp bạn định dạng các biến cần thiết.
+   15..gitignore: Tệp này chứa danh sách các tệp và thư mục không nên được theo dõi bởi Git.
